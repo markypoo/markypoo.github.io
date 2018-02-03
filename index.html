@@ -1,7 +1,33 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.min.css" />
+    <style>
+        #section0 {
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: url(fightingtown-creek.jpg);
+        }
+    </style>
+</head>
 <body>
-<h1>Test</h1>
-<p>Yay.</p>
+    <div id="fullpage">
+        <div class="section" id="section0"></div>
+    </div>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#fullpage").fullpage({
+				verticalCentered: false,				
+				css3:false
+			});
+		});
+	</script>
 </body>
 </html>
